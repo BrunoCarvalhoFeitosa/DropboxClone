@@ -28,7 +28,6 @@ export const AboutContainerTitle = styled.h3 `
 
 export const AboutFlexContainer = styled.div `
   display: flex;
-  margin-top: 40px;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -36,6 +35,7 @@ export const AboutFlexContainer = styled.div `
 `;
 
 export const AboutTextFirstContainer = styled.div `
+  margin-top: 56px;
 
   @media screen and (max-width: 680px) {
     margin-top: 42px;
