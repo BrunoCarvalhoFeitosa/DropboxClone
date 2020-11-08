@@ -1,25 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import data from './data';
+import Section from './components/Section';
+import SideMenu from './components/SideMenu';
+import FormMenu from './components/FormMenu';
+import FindPlans from './components/FindPlans';
+import Footer from './components/Footer';
+import About from './components/About';
+import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Section 
+        variant="blue"
+        title={data[0].title}
+        description={data[0].description} 
+      />
+
+      <Section 
+        variant="beige"
+        title={data[1].title}
+        description={data[1].description}
+      />
+
+      <About />
+
+      <FindPlans />
+
+      <Footer />
+
+      <SideMenu>
+        <FormMenu />
+      </SideMenu>
+
+      <GlobalStyles />
+    </>
   );
 }
 
