@@ -23,7 +23,7 @@ export const Container = styled.div`
       width: 64%;
       transform: translateY(-60px);
 
-      @media screen and (max-width: 680px) {
+      @media screen and (max-width: 1024px) {
         width: 100%;
       }
     }
@@ -61,6 +61,10 @@ export const Container = styled.div`
         font-size: 17px;
         font-weight: 300;
         color: var(--color-quaternary);
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 100%;
       }
     }
   }
@@ -147,7 +151,7 @@ export const ContentWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column; 
   }
 `;

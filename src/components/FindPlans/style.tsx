@@ -21,13 +21,13 @@ export const FindPlansOffer = styled.div `
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
 
 export const FindPlansOfferColumn = styled.div `
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     margin-bottom: 50px;    
   }
 `;
@@ -36,7 +36,7 @@ export const FindPlansOfferColumnTitle = styled.h4 `
   font-size: 40px;
   line-height: 44px;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     font-size: 25px;
     line-height: 29px;
   }

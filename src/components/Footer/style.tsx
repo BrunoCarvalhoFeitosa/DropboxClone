@@ -10,7 +10,7 @@ export const FooterLinksContainer = styled.ul `
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -20,7 +20,7 @@ export const FooterColumn = styled.div `
   &:not(:last-of-type) {
     margin-right: 115px;
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 1024px) {
       margin-right: 0;
       margin-bottom: 40px; 
     }
@@ -32,7 +32,7 @@ export const FooterTitle = styled.h3 `
   font-size: 22px;
   color: var(--color-tertiary);
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     text-align: center;    
   }
 `;
@@ -46,7 +46,7 @@ export const FooterLink = styled.li `
     text-decoration: underline;
   }
 
-  @media screen and (max-width: 680px) {  
+  @media screen and (max-width: 1024px) {  
     text-align: center;
   }
 `;
@@ -56,7 +56,7 @@ export const FooterLanguage = styled.div `
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     margin: 40px 0 0;
     justify-content: center;
   }

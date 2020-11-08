@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 import { FaDropbox } from 'react-icons/fa';
 
-export const Container = styled.div`
+export const Container = styled.div `
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   height: 100%;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     max-width: 480px;
   }
 `;
 
-export const Navigation = styled.nav`
+export const Navigation = styled.nav `
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,13 +37,13 @@ export const Navigation = styled.nav`
   }
 `;
 
-export const DropboxLogo = styled(FaDropbox)`
+export const DropboxLogo = styled(FaDropbox) `
   width: 36px;
   height: 32px;
   fill: var(--color-blue);
 `;
 
-export const Form = styled.form`
+export const Form = styled.form `
   display: flex;
   justify-content: center;
   flex-direction: column;

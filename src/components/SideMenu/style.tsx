@@ -8,7 +8,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
   background: var(--color-tertiary);
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     width: calc(100% / 3);
     box-shadow: -7px 0 5px -6px rgba(0, 0, 0, 0.075);
   }

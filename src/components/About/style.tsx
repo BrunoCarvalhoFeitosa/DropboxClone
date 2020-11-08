@@ -8,6 +8,10 @@ export const AboutContainer = styled.section `
   @media screen and (max-width: 680px) {
     padding: 80px 20px;  
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 80px 50px;  
+  }
 `;
 
 export const AboutContainerTitle = styled.h3 `
@@ -26,7 +30,7 @@ export const AboutFlexContainer = styled.div `
   display: flex;
   margin-top: 40px;
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
 `;
@@ -49,7 +53,7 @@ export const AboutTextContainerTitle = styled.h5 `
   font-size: 26px;
   color: var(--color-tertiary);
 
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 1024px) {
     max-width: unset;    
   }
 `;
@@ -67,12 +71,12 @@ export const AboutImageContainer = styled.div `
     &:hover {
       transform: translateY(-40px);
 
-      @media screen and (max-width: 680px) {
+      @media screen and (max-width: 1024px) {
         transform: none;
       }
     }
 
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 1024px) {
       width: 100%;
     }
   }
