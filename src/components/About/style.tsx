@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const AboutContainer = styled.section `
   width: 100%;
-  padding: 80px 120px;
+  padding: 80px 52px;
   background: var(--color-primary);
 
   @media screen and (max-width: 680px) {
-    padding: 80px 20px;  
+    padding: 80px 50px;  
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -27,7 +27,9 @@ export const AboutContainerTitle = styled.h3 `
 `;
 
 export const AboutFlexContainer = styled.div `
+  margin-top: 62px;
   display: flex;
+  justify-content: space-between;
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -35,7 +37,6 @@ export const AboutFlexContainer = styled.div `
 `;
 
 export const AboutTextFirstContainer = styled.div `
-  margin-top: 56px;
 
   @media screen and (max-width: 680px) {
     margin-top: 42px;
@@ -45,6 +46,13 @@ export const AboutTextFirstContainer = styled.div `
 
 export const AboutTextSecondContainer = styled.div `
   margin-top: 58px;
+`;
+
+export const AboutTextThirdContainer = styled.div `
+  @media screen and (max-width: 1024px) {
+    margin-top: 58px;
+    margin-bottom: 30px;
+  }
 `;
 
 export const AboutTextContainerTitle = styled.h5 `
@@ -61,6 +69,7 @@ export const AboutTextContainerTitle = styled.h5 `
 export const AboutTextContainerSubtitle = styled.p `
   font-size: 17px;
   color: var(--color-tertiary);
+  max-width: 400px;
 `;
 
 export const AboutImageContainer = styled.div `

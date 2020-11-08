@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const FindPlansContainer = styled.section `
   width: 100%;
-  padding: 80px 120px;
+  padding: 80px 52px;
   background: var(--color-tertiary);
 
   @media screen and (max-width: 680px) {
-    padding: 80px 20px;    
+    padding: 80px 50px;    
   }
 `;
 
@@ -27,6 +27,13 @@ export const FindPlansOffer = styled.div `
 `;
 
 export const FindPlansOfferColumn = styled.div `
+  &:first-of-type {
+    margin-right: 75px;
+
+    @media screen and (max-width: 1024px) {
+      margin-right: 0;
+    }
+  }
   @media screen and (max-width: 1024px) {
     margin-bottom: 50px;    
   }

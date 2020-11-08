@@ -30,7 +30,7 @@ const FormMenu: React.FC = () => {
         <input type="email" placeholder="E-mail" />
         <input type="password" placeholder="Senha" />
 
-        <a>Esqueceu a senha?</a>
+        <a href="/">Esqueceu a senha?</a>
 
         <button>Prosseguir</button>
 

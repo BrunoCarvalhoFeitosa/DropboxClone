@@ -5,13 +5,14 @@ import {
   AboutFlexContainer,
   AboutTextFirstContainer,
   AboutTextSecondContainer,
+  AboutTextThirdContainer,
   AboutTextContainerTitle,
   AboutTextContainerSubtitle,
   AboutImageContainer,
 } from './style';
 import homeTourImage from '../../assets/images/home-producttour.png';
 import homeTourFocusedImage from '../../assets/images/home-producttour-focused.png';
-import homeTourSincronizedImage from '../../assets/images/home-producttour-focused.png';
+import homeTourSincronizedImage from '../../assets/images/home-producttour-insync.png';
 
 const About: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const About: React.FC = () => {
           <AboutTextContainerSubtitle>Reúna em um só lugar arquivos tradicionais, conteúdo em nuvem, documentos do Dropbox Paper e atalhos da Web — e trabalhe da forma que funciona para você.</AboutTextContainerSubtitle>
         </AboutTextFirstContainer>
         <AboutImageContainer>
-          <img src={homeTourSincronizedImage} alt="Mantenha-se organizado" />
+          <img src={homeTourImage} alt="Mantenha-se organizado" />
         </AboutImageContainer>
       </AboutFlexContainer>
 
@@ -38,12 +39,12 @@ const About: React.FC = () => {
       </AboutFlexContainer>
 
       <AboutFlexContainer>
-        <AboutTextSecondContainer>
+        <AboutTextThirdContainer>
           <AboutTextContainerTitle>Permaneça em sincronia</AboutTextContainerTitle>
           <AboutTextContainerSubtitle>Coordene tudo com a equipe e mantenha seus projetos em andamento com as ferramentas que você usa todos os dias, tudo dentro do Dropbox.</AboutTextContainerSubtitle>
-        </AboutTextSecondContainer>
+        </AboutTextThirdContainer>
         <AboutImageContainer>
-          <img src={homeTourFocusedImage} alt="Permaneça em sincronia" />
+          <img src={homeTourSincronizedImage} alt="Permaneça em sincronia" />
         </AboutImageContainer>
       </AboutFlexContainer>
     </AboutContainer>
